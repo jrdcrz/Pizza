@@ -30,7 +30,7 @@ document.querySelector(".order").addEventListener("click", () => {
     document.querySelector(`[data-selection-target="#menu"]`).classList.add("red");
 });
 
-document.querySelector(`[type="submit"]`).addEventListener("click", () => {
+document.querySelector(`input[type="submit"]`).addEventListener("click", () => {
     document.querySelector("form").reset();
 });
 
