@@ -1,0 +1,103 @@
+:root{
+    --oswald: "Oswald", san-serif;
+    --Secular: "Secular One", san-serif;
+    --orange: #9f6a44;
+    --red: #d46b2e;
+    --black: #121212;
+    --light-blue: #19dde1;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+body{
+    background: var(--red);
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--orange);
+    /* gap: 250px; */
+    min-height: 8vh;
+}
+h2{
+    font-family: var(--Secular);
+    color: var(--light-blue);
+    letter-spacing: 1.5px;
+}
+.drop{
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 2rem;
+}
+.drop .line{
+    background: var(--light-blue);
+    width: 50%;
+    height: 0.3rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+.links{
+    color: var(--light-blue);
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+li{
+    list-style: none;
+    color: var(--light-blue);
+    font-family: var(--oswald);
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+li:hover{
+    color: var(--red);
+}
+.red{
+    color: var(--red);
+}
+h1{
+    font-family: var(--Secular);
+}
+[data-selection-content]{
+    display: none;
+}
+.active[data-selection-content]{
+    display: block;
+}
+.selection-content h1{
+    text-align: center;
+    font-size: calc(1rem + 0.7vw);
+    font-family: var(--Secular);
+    background: linear-gradient(to right, var(--light-blue)100%, var(--orange)0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.selection-contet h2{
+    font-size: calc(1rem + 0.7vw);
+    font-family: var(--Secular);
+    text-align: center;
+}
+.selection-content p{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
