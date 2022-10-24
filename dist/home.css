@@ -1,0 +1,66 @@
+#home {
+    height: 100vh;
+    background: url(./images/oven.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#home.sub-content{
+    text-align: center;
+    background: linear-gradient(to right, var(--light-blue)100%, var(--orange)0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#home .sub-content h2{
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, var(--light-blue)100%, var(--orange)0%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#home .sub-content .order-btn{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#home .sub-content .order{
+    padding: 4px 18px;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    font-family: var(--oswald);
+    background: var(--light-blue);
+    color: var(--red);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#home .sub-content .order:hover{
+    background: var(--red);
+    color:var(--light-blue);
+}
+#home .sub-content .shop-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: inherit;
+    margin-top: 10px;
+    margin-left: 420px;
+    margin-right: 550px;
+    border-radius: 20px;
+    width: calc(15rem + 15vw);
+    height: calc(17rem + 10vw);
+    background: rgba(0, 0, 0, 0.4);
+}
+.shop-info p {
+    color: var(--light-blue);
+    letter-spacing: 1px;
+}
+iframe{
+    margin-right: 45px;
+}
